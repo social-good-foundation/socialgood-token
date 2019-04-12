@@ -1,0 +1,23 @@
+{
+  "name": "socialgood-token",
+  "version": "0.1.0",
+  "description": "Smart contracts of SocialGood token compatible with ERC-20",
+  "main": "index.js",
+  "repository": "git@github.com:social-good-foundation/socialgood-token.git",
+  "author": "Social Good Foundation Inc. <info@socialgood-foundation.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "ganache-cli > /dev/null & truffle test ; RETVAL=$? ; kill $! ; exit $RETVAL"
+  },
+  "dependencies": {
+    "openzeppelin-solidity": "^1.12.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "ganache-cli": "^6.2.3",
+    "truffle": "^4.1.14",
+    "truffle-flattener": "^1.2.10",
+    "truffle-hdwallet-provider": "^1.0.2"
+  }
+}
